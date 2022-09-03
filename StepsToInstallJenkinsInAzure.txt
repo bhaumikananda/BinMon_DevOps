@@ -1,0 +1,9 @@
+Important Links:
+	1. Youtube channel that I finally got which helped >> https://www.youtube.com/watch?v=e1Y2sFW5nN0
+	2. Jenkins installation link (referred in youtube channel above) >> https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-20-04
+	3. Jenkins installation link that I referred separately >> https://www.vultr.com/docs/installing-jenkins-on-ubuntu/?utm_source=performance-max-apac&utm_medium=paidmedia&obility_id=16876059738&utm_adgroup=&utm_campaign=&utm_term=&utm_content=&gclid=CjwKCAjw9suYBhBIEiwA7iMhNHrdLqinLYuPJqpPeqimvdhQSS7HrmcJwKW6FVttwvSVTW5FkgPSThoCQiQQAvD_BwE
+	4. Azure home page >> https://portal.azure.com/#home
+	5. Azure connect link for the Ubuntu server >> https://portal.azure.com/#@bhaumikanandagmail.onmicrosoft.com/resource/subscriptions/6b88c253-5315-45cf-931b-7d9f78cc0dc0/resourcegroups/binmon_rg/providers/Microsoft.Compute/virtualMachines/binmon-jenkins/connect
+
+Important CLI command - 
+	1. 
