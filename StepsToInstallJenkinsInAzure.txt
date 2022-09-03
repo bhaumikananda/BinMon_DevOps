@@ -6,4 +6,4 @@ Important Links:
 	5. Azure connect link for the Ubuntu server >> https://portal.azure.com/#@bhaumikanandagmail.onmicrosoft.com/resource/subscriptions/6b88c253-5315-45cf-931b-7d9f78cc0dc0/resourcegroups/binmon_rg/providers/Microsoft.Compute/virtualMachines/binmon-jenkins/connect
 
 Important CLI command - 
-	1. 
+	1. ssh -i binmon-jenkins_key.pem binmon@20.192.5.44
