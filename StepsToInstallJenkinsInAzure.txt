@@ -6,4 +6,31 @@ Important Links:
 	5. Azure connect link for the Ubuntu server >> https://portal.azure.com/#@bhaumikanandagmail.onmicrosoft.com/resource/subscriptions/6b88c253-5315-45cf-931b-7d9f78cc0dc0/resourcegroups/binmon_rg/providers/Microsoft.Compute/virtualMachines/binmon-jenkins/connect
 
 Important CLI command - 
-	1. ssh -i binmon-jenkins_key.pem binmon@20.192.5.44
+	1. To connect to remote Jenkins server >>  ssh -i binmon-jenkins_key.pem binmon@20.192.5.44
+    2. To instal app, we need to sudo >> sudo su -
+	3. In sudo mode update app >> apt update
+	4. Install java >> apt install openjdk-11-jre-headlesst
+	5. Install mvn >> apt install mvn
+	6. Get the jenkins key >> wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+	
+<<<First set Java in the server>>>
+https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04#installing-specific-versions-of-openjdk
+1. Update the package index first to install any software >> sudo apt update
+2. Chcek if java is installed >> java -version
+3. If java not installed then use the command (which will install jre from jdk11) >> sudo apt install default-jre
+4. You may need jdk too, comman >> sudo apt install default-jdk
+5. Verify the jdk version from the command >> javac -version
+6. Get the Java path by runing the command >> sudo update-alternatives --config java
+7. Set Java home through following steps
+	a. Open the editor >> sudo nano /etc/environment
+	b. Save the JAVA_HOME by appending the file with -->> ;JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+	c. Save the nano file through ctrl+x
+	d. Now reload the file to load the environment details
+8. To check java is loaded use the same old omand >> echo $JAVA_HOME
+<<<Second set Jenkins in the server>>>
+https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-20-04
+1. To get latest jenkins use >> wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+2. Append Debian package repository address to server’s sources.list >> sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+3. Do apt update to use the latest jenkins repository >> sudo apt update
+4. Finally, install Jenkins >> sudo apt install jenkins
+<<<Third start jenkins>>>
