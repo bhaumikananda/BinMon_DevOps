@@ -34,3 +34,9 @@ https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubunt
 3. Do apt update to use the latest jenkins repository >> sudo apt update
 4. Finally, install Jenkins >> sudo apt install jenkins
 <<<Third start jenkins>>>
+1. Start command >>> sudo systemctl start jenkins
+
+Few important factors:
+1. Used Ubentu 18.X server version
+2. Used Java 11
+3. Had 2GB ram in server
